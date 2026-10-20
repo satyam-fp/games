@@ -1,0 +1,81 @@
+{
+ "images": {
+  "bg_portrait": {
+   "url": "assets/bg_portrait.webp",
+   "w": 808,
+   "h": 1440
+  },
+  "bg_landscape": {
+   "url": "assets/bg_landscape.webp",
+   "w": 1600,
+   "h": 898
+  },
+  "flask4_glass": {
+   "url": "assets/flask4_glass.webp",
+   "w": 510,
+   "h": 1445,
+   "meta": {
+    "mouthX": 255,
+    "mouthY": 136,
+    "innerW": 340,
+    "blend": "add"
+   }
+  },
+  "flask5_glass": {
+   "url": "assets/flask5_glass.webp",
+   "w": 510,
+   "h": 1713,
+   "meta": {
+    "mouthX": 255,
+    "mouthY": 136,
+    "innerW": 340,
+    "blend": "add"
+   }
+  },
+  "collar": {
+   "url": "assets/collar.webp",
+   "w": 510,
+   "h": 166,
+   "meta": {
+    "mouthX": 255,
+    "mouthY": 136,
+    "innerW": 340
+   }
+  },
+  "cap": {
+   "url": "assets/cap.webp",
+   "w": 510,
+   "h": 190,
+   "meta": {
+    "centerX": 255,
+    "collarTopY": 177,
+    "innerW": 340
+   }
+  },
+  "robot_idle": {
+   "url": "assets/robot_idle.webp",
+   "w": 480,
+   "h": 480
+  },
+  "robot_happy": {
+   "url": "assets/robot_happy.webp",
+   "w": 480,
+   "h": 480
+  },
+  "robot_think": {
+   "url": "assets/robot_think.webp",
+   "w": 480,
+   "h": 480
+  }
+ },
+ "audio": {
+  "select": "assets/select.mp3",
+  "pour": "assets/pour.mp3",
+  "invalid": "assets/invalid.mp3",
+  "sealed": "assets/sealed.mp3",
+  "reveal": "assets/reveal.mp3",
+  "win": "assets/win.mp3",
+  "click": "assets/click.mp3",
+  "undo": "assets/undo.mp3"
+ }
+}

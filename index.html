@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pocket Puzzles</title>
+<meta name="description" content="Casual HTML5 games, built for YouTube Playables — play instantly on any screen.">
+<style>
+  :root {
+    --bg: #0d1226; --bg2: #151c3a; --card: #1a2246; --line: #2a3566;
+    --text: #f3f5ff; --dim: #aab3dd; --accent: #ffd23f; --accent2: #38c6ff; --chip: #26305e;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f4f6fc; --bg2: #e8ecf8; --card: #ffffff; --line: #d9def0; --text: #141933; --dim: #535b80; --accent: #e0a800; --accent2: #0b8fd0; --chip: #eef1fb; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: linear-gradient(180deg, var(--bg2), var(--bg) 420px); background-color: var(--bg); color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 56px 0 28px; }
+  h1 { margin: 0 0 8px; font-size: clamp(30px, 6vw, 46px); letter-spacing: -0.02em; }
+  .sub { margin: 0; color: var(--dim); font-size: 18px; max-width: 640px; }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 18px 0 0; padding: 0; list-style: none; color: var(--dim); font-size: 14px; }
+  .facts li::before { content: "✓ "; color: var(--accent2); font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 22px; padding: 8px 0 48px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
+  .shot { position: relative; display: block; aspect-ratio: 4 / 3; background: #0b1022; overflow: hidden; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block; transition: transform .25s; }
+  .shot:hover img { transform: scale(1.03); }
+  .ph { width: 100%; height: 100%; display: grid; place-items: center; font-size: 64px; font-weight: 800; color: var(--dim); }
+  .play-overlay { position: absolute; right: 14px; bottom: 14px; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--accent); color: #141933; font-size: 18px; box-shadow: 0 4px 14px #0006; }
+  .body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  h2 { margin: 0; font-size: 24px; } h2 a { text-decoration: none; }
+  .tagline { margin: 0; color: var(--accent2); font-weight: 600; }
+  .desc { margin: 0; color: var(--dim); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 0; padding: 0; list-style: none; }
+  .tags li { background: var(--chip); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; font-size: 13px; }
+  .new { margin: 4px 0 0; font-size: 14px; padding: 10px 12px; background: var(--chip); border-radius: 10px; }
+  .foot { margin-top: auto; padding-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .btn { background: var(--accent); color: #141933; text-decoration: none; font-weight: 700; padding: 10px 20px; border-radius: 999px; }
+  .btn:hover { filter: brightness(1.06); }
+  .meta { color: var(--dim); font-size: 13px; }
+  footer { border-top: 1px solid var(--line); padding: 22px 0 40px; color: var(--dim); font-size: 14px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Pocket Puzzles</h1>
+      <p class="sub">Casual HTML5 games, built for YouTube Playables — play instantly on any screen.</p>
+      <ul class="facts">
+        <li>2 games</li>
+        <li>Touch, mouse &amp; keyboard</li>
+        <li>Any screen size or orientation</li>
+        <li>Instant load, no install</li>
+        <li>Playables SDK integrated</li>
+      </ul>
+    </header>
+    <main class="grid">
+    <article class="card">
+      <a class="shot" href="pour-decisions/" aria-label="Play Pour Decisions"><img src="pour-decisions/thumb.jpg" alt="Screenshot of Pour Decisions" loading="lazy" width="480" height="640"><span class="play-overlay">▶</span></a>
+      <div class="body">
+        <h2><a href="pour-decisions/">Pour Decisions</a></h2>
+        <p class="tagline">Pour, sort, solve — in a cosmic lab.</p>
+        <p class="desc">Pour glowing liquids between sci-fi flasks until every flask holds one color. Physically simulated pouring, a robot lab assistant who cheers you on, 500 solver-verified levels, and a late game with mystery segments and tall flasks.</p>
+        <ul class="tags"><li>Puzzle</li><li>500 levels</li><li>Hints &amp; undo</li><li>Colorblind mode</li></ul>
+        <p class="new"><strong>What’s new in v0.3.2:</strong> All-new cosmic lab look with clearer, easier-to-read flasks, a robot assistant and real sound effects.</p>
+        <div class="foot">
+          <a class="btn" href="pour-decisions/">Play now</a>
+          <span class="meta">v0.3.2 · Oct 19, 2026 · 609 KB</span>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <a class="shot" href="blockwise/" aria-label="Play Blockwise"><img src="blockwise/thumb.jpg" alt="Screenshot of Blockwise" loading="lazy" width="480" height="640"><span class="play-overlay">▶</span></a>
+      <div class="body">
+        <h2><a href="blockwise/">Blockwise</a></h2>
+        <p class="tagline">Fit the blocks. Clear the lines.</p>
+        <p class="desc">Drag shapes onto an 8×8 board and fill rows or columns to clear them. Chain clears for combos, and chase your best score — every deal is checked to be playable.</p>
+        <ul class="tags"><li>Puzzle</li><li>Endless</li><li>High score</li><li>Combos</li></ul>
+        <p class="new"><strong>What’s new in v0.1.1:</strong> Bigger pieces and a roomier layout on phones; everything stays clear of the notch.</p>
+        <div class="foot">
+          <a class="btn" href="blockwise/">Play now</a>
+          <span class="meta">v0.1.1 · Oct 19, 2026 · 361 KB</span>
+        </div>
+      </div>
+    </article>
+    </main>
+    <footer>Made by Satyam Kumar · Updated Oct 19, 2026</footer>
+  </div>
+</body>
+</html>
